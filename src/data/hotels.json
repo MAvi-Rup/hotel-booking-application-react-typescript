@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "name": "Hotel A",
+    "description": "A luxurious hotel in the city center.",
+    "rooms": ["1", "2", "3"]
+  },
+  {
+    "id": "2",
+    "name": "Hotel B",
+    "description": "A cozy hotel near the beach.",
+    "rooms": ["4", "5"]
+  }
+]

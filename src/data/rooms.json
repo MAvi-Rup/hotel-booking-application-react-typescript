@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Deluxe Room",
+    "description": "A spacious room with a king-size bed.",
+    "price": 150
+  },
+  {
+    "id": "2",
+    "name": "Standard Room",
+    "description": "A comfortable room with a queen-size bed.",
+    "price": 100
+  },
+  {
+    "id": "3",
+    "name": "Suite",
+    "description": "A luxurious suite with a separate living area.",
+    "price": 250
+  },
+  {
+    "id": "4",
+    "name": "Ocean View Room",
+    "description": "A room with a beautiful view of the ocean.",
+    "price": 120
+  },
+  {
+    "id": "5",
+    "name": "Family Room",
+    "description": "A spacious room with two queen-size beds.",
+    "price": 180
+  }
+]
