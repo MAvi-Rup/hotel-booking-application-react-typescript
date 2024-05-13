@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import BookingList from "./components/BookingList";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HotelDetails from "./components/HotelDetails";
+import HotelList from "./components/HotelList";
+import LoginForm from "./components/LoginForm";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/hotels/:hotelId" element={<HotelDetails />} />
+          <Route path="/bookings" element={<BookingList />} />
+          <Route path="/" element={<HotelList />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

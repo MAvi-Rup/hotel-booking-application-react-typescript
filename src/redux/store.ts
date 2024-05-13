@@ -1,7 +1,17 @@
 import { configureStore } from "@reduxjs/toolkit";
+import authSlice from "./slices/authSlice";
+import bookingsSlice from "./slices/bookingSlice";
+import hotelsSlice from "./slices/hotelSlice";
+import roomSlice from "./slices/roomSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    auth: authSlice.reducer,
+    hotels: hotelsSlice.reducer,
+    rooms: roomSlice,
+
+    bookings: bookingsSlice.reducer,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
