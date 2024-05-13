@@ -10,5 +10,17 @@
     "name": "Hotel B",
     "description": "A cozy hotel near the beach.",
     "rooms": ["4", "5"]
+  },
+  {
+    "id": "3",
+    "name": "Hotel C",
+    "description": "A cozy hotel near the beach.",
+    "rooms": ["6", "7"]
+  },
+  {
+    "id": "4",
+    "name": "Hotel D",
+    "description": "A cozy hotel near the beach.",
+    "rooms": ["8", "9"]
   }
 ]

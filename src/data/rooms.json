@@ -28,5 +28,29 @@
     "name": "Family Room",
     "description": "A spacious room with two queen-size beds.",
     "price": 180
+  },
+  {
+    "id": "6",
+    "name": "Single Room",
+    "description": "A cozy room with a single bed.",
+    "price": 80
+  },
+  {
+    "id": "7",
+    "name": "Executive Suite",
+    "description": "A luxurious suite with a private balcony.",
+    "price": 300
+  },
+  {
+    "id": "8",
+    "name": "Mountain View Room",
+    "description": "A room with a stunning view of the mountains.",
+    "price": 140
+  },
+  {
+    "id": "9",
+    "name": "Honeymoon Suite",
+    "description": "A romantic suite for couples.",
+    "price": 280
   }
 ]

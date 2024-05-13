@@ -1,13 +1,23 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+interface User {
+  email: string;
+  password: string;
+}
+
 interface AuthState {
   isLoggedIn: boolean;
-  email: string;
+  user: User | null;
 }
+
+const initialUser: User | null = {
+  email: "user@example.com",
+  password: "password",
+};
 
 const initialState: AuthState = {
   isLoggedIn: false,
-  email: "",
+  user: initialUser,
 };
 
 const authSlice = createSlice({
@@ -18,12 +28,20 @@ const authSlice = createSlice({
       state,
       action: PayloadAction<{ email: string; password: string }>
     ) => {
-      state.isLoggedIn = true;
-      state.email = action.payload.email;
+      const { email, password } = action.payload;
+      if (
+        state.user && // Ensure user is not null
+        state.user.email === email &&
+        state.user.password === password
+      ) {
+        state.isLoggedIn = true;
+      } else {
+        // Invalid credentials
+        state.isLoggedIn = false;
+      }
     },
     logout: (state) => {
       state.isLoggedIn = false;
-      state.email = "";
     },
   },
 });
